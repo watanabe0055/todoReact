@@ -3,8 +3,8 @@ import "./styles.css";
 
 export const App = () => {
   const [todoText, setTodoText] = useState("");
-  const [incompleteTodos, setIncompleteTodos] = useState(["aaaaaa", "iiiioo"]);
-  const [comopleteTodos, setComopleteTodos] = useState(["uuuu"]);
+  const [incompleteTodos, setIncompleteTodos] = useState([]);
+  const [comopleteTodos, setComopleteTodos] = useState([]);
 
   const onChangeTodoText = (event) => setTodoText(event.target.value);
   const onClickAdd = () => {
